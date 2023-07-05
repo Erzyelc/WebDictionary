@@ -10,7 +10,7 @@ const Nav = () => {
         <Link href="/" className="">
             <AcademicCapIcon className="h-10 w-10 text-gray-500" stroke-width="1"/>
         </Link>
-        <div className="flex gap-4 h-full items-center">
+        <div className="flex gap-4 items-center">
             <div className="relative text-sm font-bold md:text-lg">
                 <button className="flex items-center gap-4">
                     <span>Sans Serif</span>
@@ -18,7 +18,7 @@ const Nav = () => {
                 </button>
             </div>
             <div class="w-px h-5 bg-gray-400"></div>
-            <div className="flex items-center gap-4 md:gap-6">
+            <div className="flex items-center gap-4">
                 <button title="Toggle light or dark mode" className="relative flex h-5 w-10 items-center rounded-xl bg-secondary">
                     <svg className="absolute h-3.5 w-3.5 rounded-full bg-white" style={ {right: 4, left: 'auto'} }></svg>
                 </button>
