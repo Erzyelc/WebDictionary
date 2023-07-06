@@ -8,7 +8,7 @@ const Form = () => {
             type="search"
             id="getword"
             placeholder="Search for any word..."
-            className="flex align self-start w-full h-12 border-none rounded-[16px] bg-accent text-[1rem] font-bold pl-5 focus:outline-none focus:ring-1 focus:ring-search"
+            className="flex align self-start w-full h-12 border-none rounded-2xl bg-accent text-base font-bold pl-5 focus:outline-none focus:ring-1 focus:ring-search"
             />
             <MagnifyingGlassIcon className="absolute w-6 h-6 text-search right-5 top-3" strokeWidth="1"/>
       </div>
