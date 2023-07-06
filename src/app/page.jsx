@@ -2,7 +2,7 @@ import Form from "@components/Form";
 
 const Home = () => {
   return (
-    <section className=''>
+    <section>
     </section>
   )
 }

@@ -17,7 +17,7 @@ const Nav = () => {
                     <ChevronDownIcon className="w-4 h-4 text-secondary" strokeWidth="3" />
                 </button>
             </div>
-            <div class="w-px h-5 bg-gray-400"></div>
+            <div className="w-px h-5 bg-gray-400"></div>
             <div className="flex items-center gap-4">
                 <button title="Toggle light or dark mode" className="relative flex h-5 w-10 items-center rounded-xl bg-secondary">
                     <svg className="absolute h-3.5 w-3.5 rounded-full bg-white right-1 left-auto"></svg>
