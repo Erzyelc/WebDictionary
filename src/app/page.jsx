@@ -1,6 +1,9 @@
+import Form from "@components/Form";
+
 const Home = () => {
   return (
-    <div>Home</div>
+    <section>
+    </section>
   )
 }
 

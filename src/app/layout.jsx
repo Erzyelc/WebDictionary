@@ -1,4 +1,6 @@
 import '@styles/globals.css';
+import Nav from '@components/Nav';
+import { Provider } from 'react';
 
 export const metadata = {
     title: "WebDictionary",
@@ -9,10 +11,8 @@ const RootLayout = ({ children }) => {
   return (
     <html lang="en">
     <body>
-        <div className='main'>
-        </div>
-
-        <main className="app">
+        <main className="app container mx-auto max-w-2xl">
+            <Nav />
             {children}
         </main>
     </body>
