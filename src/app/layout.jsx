@@ -10,7 +10,7 @@ export const metadata = {
 const RootLayout = ({ children }) => {
   return (
     <html lang="en">
-    <body bg-body>
+    <body className="bg-slate-50">
         <main className="app container mx-auto max-w-2xl">
             <Nav />
             {children}
