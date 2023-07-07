@@ -1,8 +1,8 @@
-import SeachInput from "../components/SearchInput";
+import SeachInput from "@/components/SearchInput";
 
 const Home = () => {
   return (
-    <section className="">
+    <section>
       <SeachInput />
     </section>
   );

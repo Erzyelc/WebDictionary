@@ -17,6 +17,7 @@ const Search = () => {
           src={"/img/icons/search.svg"}
           width={20}
           height={20}
+          priority
           alt="Search icon"
         />
       </button>

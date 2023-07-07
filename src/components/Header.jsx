@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 const Header = ({
@@ -13,7 +14,15 @@ const Header = ({
   const [fontTitle, setFontTitle] = useState("Sans Serif");
   return (
     <header className="flex justify-between items-center">
-      <Image src={"/img/icons/book.svg"} width={28} height={32} alt="Logo" />
+      <Link href={"/"}>
+        <Image
+          src={"/img/icons/book.svg"}
+          priority
+          width={28}
+          height={32}
+          alt="Logo"
+        />
+      </Link>
       <div className="flex gap-[1.625rem] items-center">
         <div className="flex gap-4 items-center">
           <div className="relative">
@@ -28,8 +37,9 @@ const Header = ({
                 onMouseLeave={() => setFont(false)}
                 className="absolute w-[150px] -translate-x-1/4 p-2 flex-col flex gap-1 bg-white dark:bg-black dark:drop-shadow-md mt-5 z-10 drop-shadow-sm rounded-md border border-zinc-100 dark:border-gray-500"
               >
-                {fontArray.map((font) => (
+                {fontArray.map((font, i) => (
                   <p
+                    key={i}
                     onClick={() => {
                       setFont(false);
                       setFontSelected(font.fontType);
@@ -47,9 +57,11 @@ const Header = ({
             src={"/img/icons/arrow.svg"}
             width={12}
             height={6}
+            priority
+            className="w-auto h-auto"
             alt="Arrow Icon"
           />
-          <span className="ml-6 border-l-[1px] h-8 border-[#e9e9e9]"></span>
+          <span className="ml-6 border-l-[1px] h-8 border-gray2" />
         </div>
 
         <div
@@ -58,8 +70,8 @@ const Header = ({
           }}
           className={`relative cursor-pointer w-10 h-5 rounded-full before:w-[14px] before:h-[14px] before:top-[3px] before:rounded-full before:bg-white before:drop-shadow-md before:absolute transition-all duration-500 ease-in-out before:transition-all before:duration-500 before:ease-in-out ${
             isDark
-              ? "before:translate-x-[23px] bg-[#a445ed]"
-              : "before:left-[3px] bg-[#757575]"
+              ? "before:translate-x-[23px] bg-purpleProject"
+              : "before:left-[3px] bg-gray3"
           }`}
         ></div>
         <svg
@@ -69,8 +81,8 @@ const Header = ({
           viewBox="0 0 22 22"
           className={`transition-all duration-500 ease-in-out cursor-pointer ${
             isDark
-              ? "fill-[#a445ed] stroke-[#a445ed]"
-              : "fill-transparent stroke-[#757575]"
+              ? "fill-purpleProject stroke-purpleProject"
+              : "fill-transparent stroke-gray3"
           }`}
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
