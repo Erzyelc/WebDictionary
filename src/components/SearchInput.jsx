@@ -7,7 +7,7 @@ const Search = () => {
       <input
         type="text"
         placeholder="Search for any word..."
-        className="bg-[#f4f4f4] dark:bg-gray-300 dark:placeholder:text-black h-full w-full pl-6 rounded-2xl focus:border-[1px] focus:border-purpleProject outline-none border-[1px] border-transparent placeholder:font-semibold placeholder:text-gray-400/60 font-bold"
+        className="bg-[#f4f4f4] dark:bg-zinc-400 dark:placeholder:text-black/60 dark:text-black h-full w-full pl-6 rounded-2xl focus:border-[1px] focus:border-purpleProject outline-none border-[1px] border-transparent placeholder:font-semibold placeholder:text-gray-400/60 font-bold"
       />
       <button
         type="submit"

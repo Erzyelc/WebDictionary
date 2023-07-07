@@ -26,7 +26,7 @@ const Header = ({
             {font && (
               <div
                 onMouseLeave={() => setFont(false)}
-                className="absolute w-[150px] -translate-x-1/4 p-2 flex-col flex gap-1 bg-white mt-5 z-10 drop-shadow-sm rounded-md border border-zinc-100"
+                className="absolute w-[150px] -translate-x-1/4 p-2 flex-col flex gap-1 bg-white dark:bg-black dark:drop-shadow-md mt-5 z-10 drop-shadow-sm rounded-md border border-zinc-100 dark:border-gray-500"
               >
                 {fontArray.map((font) => (
                   <p
@@ -35,7 +35,7 @@ const Header = ({
                       setFontSelected(font.fontType);
                       setFontTitle(font.name);
                     }}
-                    className="cursor-pointer hover:bg-gray-50 py-1 px-3 text-sm"
+                    className="cursor-pointer hover:bg-gray-50 dark:hover:bg-slate-700 py-1 px-3 text-sm"
                   >
                     {font.name}
                   </p>
