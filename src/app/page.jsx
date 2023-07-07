@@ -1,11 +1,11 @@
-import Form from "@components/Form";
+import SeachInput from "@/components/SearchInput";
 
 const Home = () => {
   return (
     <section>
-    <Form />
+      <SeachInput />
     </section>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
